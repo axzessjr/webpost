@@ -1,0 +1,29 @@
+<div>
+    <h1>Writing Post</h1>
+    <div class="writingForm">
+        You must log in to write the post.  
+    </div>
+</div>
+{{isLogged}}
+<div>
+    <h1>Writing Post</h1>
+    <div class="writingForm">
+        <label>Post Content:</label>
+        <br>
+        <textarea id="postContent"></textarea>
+        <br>
+        <button type="button" onclick="postSubmit()">post</button>
+    </div>
+</div>
+<script>
+    const postSubmit = () => {
+        const postContent = document.querySelector("#postContent").value;
+        if(postContent==""){
+            return;
+        } else {
+            document.querySelector("#postContent").value = '';
+            console.log(postContent);
+
+        }
+    }
+</script>
