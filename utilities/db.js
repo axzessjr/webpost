@@ -1,5 +1,4 @@
 const mysql = require("mysql");
-
 let db = null;
 
 const getConnection = () => {
@@ -11,8 +10,6 @@ const getConnection = () => {
             database: "webpost"
         });
     }
-
     return db;
 }
-
 export default getConnection;
