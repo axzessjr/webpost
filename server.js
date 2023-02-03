@@ -19,10 +19,10 @@ const server = http.createServer((request, response) => {
     } else {
         // View SERVER ROUTER
         viewRouter.route(request, response);
-    }
+    } 
     
     response.end();
-    
+
 }).listen(port,(error)=>{
     if(error){
         console.log("Something went wrong", error);
