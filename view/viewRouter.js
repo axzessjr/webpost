@@ -17,7 +17,9 @@ const route = (req, res) => {
     } else
     if(urlPath=="/writing"){
         res.end(html);
+    } else {
+        res.end("404: Page Not Found.");
     }
-  
 }
+
 module.exports={route}
